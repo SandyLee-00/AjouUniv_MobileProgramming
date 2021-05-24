@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    >
+
+    <fragment
+        android:id="@+id/words_fragment"
+        android:name="org.techtown.dictionary.word_fragment"
+        android:layout_width="367dp"
+        android:layout_height="352dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_word_fragment" />
+
+    <fragment
+        android:id="@+id/definition_fragment"
+        android:name="org.techtown.dictionary.Def_Fragment"
+        android:layout_width="307dp"
+        android:layout_height="347dp"
+        android:layout_weight="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toEndOf="@+id/words_fragment"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_def_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
