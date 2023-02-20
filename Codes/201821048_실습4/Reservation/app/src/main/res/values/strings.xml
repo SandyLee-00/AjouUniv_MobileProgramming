@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Reservation</string>
+    <string name="title">식당 예약 어플리게이션</string>
+    <string name="reserve_date">예약 날짜: </string>
+    <string name="reserve">예약</string>
+
+</resources>
